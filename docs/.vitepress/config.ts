@@ -26,6 +26,33 @@ export default {
         link: "/home",
       },
       {
+        text: "hryzen_lib",
+        link: "/hryzen-lib/intro",
+        collapsible: true,
+        collapsed: false,
+        items: [
+          { text: "Setup", link: "/hryzen-lib/setup" },
+          {
+            text: "Modules",
+            collapsible: true,
+            collapsed: false,
+            items: [
+              {
+                text: "Framework",
+                collapsible: true,
+                collapsed: true,
+                items: [
+                  { text: "Import", link: "/hryzen-lib/framework/import" },
+                  { text: "Objects", link: "/hryzen-lib/framework/objects" },
+                  { text: "Server", link: "/hryzen-lib/framework/server" },
+                  { text: "Events", link: "/hryzen-lib/framework/events" },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
         text: "hryzn_spawn",
         link: "/hryzn-spawn/intro",
         collapsible: true,

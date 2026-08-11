@@ -17,6 +17,9 @@ hero:
       link: https://github.com/Hryzen-Studios
 
 features:
+  - icon: 📦
+    title: <a href="/hryzen-lib/intro">hryzen_lib</a>
+    details: Free framework bridge SDK — QBX, QBCore, and ESX — that every Hryzen resource builds on
   - icon: 🧭
     title: <a href="/hryzn-spawn/intro">hryzn_spawn</a>
     details: Stylised spawn selector for QBX Core — drop-in replacement for qbx_spawn

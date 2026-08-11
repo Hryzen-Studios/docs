@@ -26,8 +26,8 @@ Add it after its dependencies:
 ```ini
 ensure ox_lib
 ensure oxmysql
-ensure versa_sdk
 ensure qbx_core
+ensure hryzen_lib
 ensure hryzn_spawn
 ```
 

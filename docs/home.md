@@ -6,4 +6,5 @@ If you're confused or need more help, feel free to open an issue or discussion o
 
 ## Resources
 
+- [hryzen_lib](/hryzen-lib/intro) — Free framework bridge SDK used by every Hryzen resource; supports QBX, QBCore, and ESX.
 - [hryzn_spawn](/hryzn-spawn/intro) — Stylised spawn selector for QBX Core, drop-in replacement for `qbx_spawn`.
