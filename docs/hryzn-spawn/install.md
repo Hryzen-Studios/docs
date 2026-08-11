@@ -1,11 +1,14 @@
 # Installation Guide
 
-If you're confused or need more help, feel free to open an issue on the [GitHub repo](https://github.com/Hryzen-Studios/hryzn_spawn).
+If you're confused or need more help, feel free to reach out through the [Hryzen Studios store](https://hryzen.store).
 
-## 1. Download Resources
+* 💳 [Purchase Here](https://hryzen.store)
+
+## 1. Download the Resource
 
 * Before installing, make sure you have all the [Required Resources](/hryzn-spawn/requirements)
-* Download `hryzn_spawn` from its [GitHub repo](https://github.com/Hryzen-Studios/hryzn_spawn)
+* Download the `hryzn_spawn` asset from your [Cfx.re Portal](https://portal.cfx.re/assets/granted-assets)
+  * The account you log in with on the portal must be the same account you used to check out on the store.
 
 ## 2. Install Files
 

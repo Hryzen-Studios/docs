@@ -2,7 +2,7 @@
 
 🧭 A stylised, DUI-based spawn selector for [QBX Core](https://github.com/Qbox-project/qbx_core) — built as a **drop-in replacement for `qbx_spawn`**.
 
-* 📦 [View on GitHub](https://github.com/Hryzen-Studios/hryzn_spawn)
+* 💳 [Purchase Here](https://hryzen.store)
 
 It hooks the same entry points qbx_core and qbx_multicharacter already call, so no other resource needs to change to use it. Players get an in-world camera scene with a prop-rendered DUI menu to pick their spawn location, instead of the default NUI list.
 
