@@ -1,0 +1,24 @@
+title: Hryzen Studios Docs
+description: Documentation for Hryzen Studios FiveM resources
+baseurl: "/docs"
+url: "https://hryzen-studios.github.io"
+
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+color_scheme: dark
+search_enabled: true
+
+aux_links:
+  "Hryzen Studios on GitHub":
+    - "https://github.com/Hryzen-Studios"
+
+nav_sort: case_insensitive
+heading_anchors: true
+
+back_to_top: true
+back_to_top_text: "Back to top"
+
+footer_content: "Copyright &copy; Hryzen Studios."
