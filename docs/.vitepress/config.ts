@@ -3,7 +3,7 @@ export default {
   description: "Scripts and UI for FiveM servers that ship fast and run clean.",
   lang: "en-US",
   cleanUrls: true,
-  base: "/docs/",
+  base: "/",
   ignoreDeadLinks: true,
 
   themeConfig: {

@@ -18,7 +18,7 @@ hero:
 
 features:
   - icon: 🧭
-    title: <a href="/docs/hryzn-spawn/intro">hryzn_spawn</a>
+    title: <a href="/hryzn-spawn/intro">hryzn_spawn</a>
     details: Stylised spawn selector for QBX Core — drop-in replacement for qbx_spawn
   - icon: 👀
     title: More Coming Soon
@@ -40,5 +40,5 @@ head:
   - - link
     - rel: icon
       type: image/png
-      href: /docs/logo.png
+      href: /logo.png
 ---
