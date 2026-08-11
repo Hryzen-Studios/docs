@@ -1,9 +1,3 @@
----
-title: Configuration
-parent: hryzn_spawn
-nav_order: 2
----
-
 # Configuration
 
 `hryzn_spawn` is configured across two files: `config/sh_config.lua` (shared — locations) and `config/cl_config.lua` (client — theme and scene).
@@ -83,4 +77,6 @@ Config.Scene = {
 | `Config.Scene.PropTxd` / `PropTex` | Texture dictionary/name of the in-world prop the DUI is drawn onto — must match a prop actually present at `PedCoords` |
 | `Config.Scene.AnimDict` / `AnimName` | Animation played on the ped for the duration of the scene |
 
+::: warning
 If you change `PedCoords`, make sure a prop with a matching `PropTxd`/`PropTex` exists near that location, or the DUI will have nothing to render onto.
+:::

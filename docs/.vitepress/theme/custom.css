@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+  /* Hryzen Studios palette — matches hryzen.store */
+  --hz-bg-void: #0a0d14;
+  --hz-bg-panel: #10141d;
+  --hz-bg-panel-raised: #141a26;
+  --hz-line: #1e2532;
+  --hz-line-bright: #2b3446;
+  --hz-blue: #2b8cff;
+  --hz-blue-dim: #164a8a;
+  --hz-blue-glow: #8fd9ff;
+  --hz-text: #e7ecf5;
+  --hz-text-dim: #7c8798;
+  --hz-text-faint: #4b5568;
+  --hz-amber: #ffb020;
+  --hz-danger: #ff5c5c;
+  --hz-success: #3ddc84;
+
+  --vp-c-brand-1: var(--hz-blue);
+  --vp-c-brand-2: var(--hz-blue-glow);
+  --vp-c-brand-3: var(--hz-blue-dim);
+  --vp-c-brand-soft: rgba(43, 140, 255, 0.16);
+
+  --vp-c-bg: var(--hz-bg-void);
+  --vp-c-bg-alt: var(--hz-bg-panel);
+  --vp-c-bg-soft: var(--hz-bg-panel-raised);
+  --vp-c-bg-elv: var(--hz-bg-panel);
+
+  --vp-c-divider: var(--hz-line);
+  --vp-c-gutter: var(--hz-line);
+
+  --vp-c-text-1: var(--hz-text);
+  --vp-c-text-2: var(--hz-text-dim);
+  --vp-c-text-3: var(--hz-text-faint);
+
+  --vp-button-brand-bg: var(--hz-blue);
+  --vp-button-brand-text: #05070c;
+  --vp-button-brand-hover-bg: var(--hz-blue-glow);
+  --vp-button-brand-hover-text: #05070c;
+  --vp-button-brand-active-bg: var(--hz-blue-glow);
+  --vp-button-brand-active-text: #05070c;
+
+  --vp-c-danger-1: var(--hz-danger);
+  --vp-c-warning-1: var(--hz-amber);
+  --vp-c-tip-1: var(--hz-success);
+
+  /* Typography — same font used for both display and body, matching hryzen.store */
+  --vp-font-family-base: "Chakra Petch", "Segoe UI", sans-serif;
+
+  /* Code stays in a real monospace face for legibility of Lua/config snippets */
+  --vp-font-family-mono: "JetBrains Mono", "Fira Code", "Cascadia Code", ui-monospace, Consolas, monospace;
+}
+
+html:not(.dark) {
+  /* This theme is dark-only, matching hryzen.store */
+  --vp-c-bg: var(--hz-bg-void);
+}
+
+body {
+  background-image:
+    linear-gradient(rgba(43, 140, 255, 0.06), rgba(0, 0, 0, 0) 320px),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.012) 0 1px, rgba(0, 0, 0, 0) 1px 3px);
+}
+
+h1, h2, h3, h4, .VPNavBarTitle .title {
+  font-family: var(--vp-font-family-base);
+  letter-spacing: 0.01em;
+  font-weight: 600;
+}
+
+code, pre, .vp-code {
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+a.vp-link,
+.vp-doc a {
+  color: var(--hz-blue);
+}
+.vp-doc a:hover {
+  color: var(--hz-blue-glow);
+}
+
+/* Sidebar / nav divider tone-down to match hairline panels on hryzen.store */
+.VPSidebarItem.level-0 {
+  padding-bottom: 8px !important;
+}
+.VPDocAsideOutline .outline-link,
+.VPSidebar .group + .group {
+  border-top: none !important;
+}
+
+/* Nav bar */
+.VPNavBar {
+  background-color: rgba(10, 13, 20, 0.92) !important;
+  backdrop-filter: blur(6px);
+}
+
+/* Custom blocks (::: info / ::: warning) styled like hryzen.store panels */
+.custom-block {
+  border-radius: 5px;
+  border: 1px solid var(--hz-line-bright);
+  background-color: var(--hz-bg-panel);
+}
+.custom-block.tip {
+  border-color: var(--hz-success);
+}
+.custom-block.warning {
+  border-color: var(--hz-amber);
+}
+.custom-block.danger {
+  border-color: var(--hz-danger);
+}
+
+/* Home hero — subtle radial glow behind the title, matching the site's hero */
+.VPHome .VPHero {
+  position: relative;
+}
+.VPHome .VPHero::before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  width: 1100px;
+  height: 1100px;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(43, 140, 255, 0.14), rgba(0, 0, 0, 0) 60%);
+}
+.VPHome .VPHero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.VPFeature {
+  border-radius: 5px !important;
+}

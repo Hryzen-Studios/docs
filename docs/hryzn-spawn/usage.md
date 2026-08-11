@@ -1,9 +1,3 @@
----
-title: Usage
-parent: hryzn_spawn
-nav_order: 3
----
-
 # Usage
 
 Once installed, `hryzn_spawn` works automatically — there's nothing to trigger manually for the standard flow.
@@ -35,7 +29,7 @@ While the selector is open:
 
 ## Location gating
 
-Locations with a `job` list in `config/sh_config.lua` (see [Configuration](configuration)) are filtered server-side — a player is only offered a job-restricted location if they currently hold one of the listed jobs. Ungated locations are shown to everyone.
+Locations with a `job` list in `config/sh_config.lua` (see [Configuration](/hryzn-spawn/configuration)) are filtered server-side — a player is only offered a job-restricted location if they currently hold one of the listed jobs. Ungated locations are shown to everyone.
 
 ## New character creation
 
