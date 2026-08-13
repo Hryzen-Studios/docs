@@ -19,6 +19,26 @@ TriggerClientEvent('hryzn_spawn:loadSpawnSelector', source, citizenId)
 
 If [illenium-appearance](https://github.com/illenium-development/illenium-appearance) is running **and you're on QBX**, this loads the character's saved model and clothing onto the ped before the scene opens, so the player sees their actual outfit while picking a spawn. This preview isn't wired up for QBCore/ESX yet.
 
+## Manual trigger
+
+If you're running a custom multichar system, want to open the selector from an admin command, or just don't want to rely on the automatic framework triggers above, `hryzn_spawn` exposes a standalone way to open it for a specific player — always registered, regardless of framework:
+
+**From another server-side resource:**
+
+```lua
+TriggerEvent('hryzn_spawn:openSelector', targetSource)
+-- or, as an export:
+exports.hryzn_spawn:OpenSelector(targetSource)
+```
+
+**Directly on the client**, if you already have a reason to be there:
+
+```lua
+TriggerClientEvent('hryzn_spawn:client:openSelector', targetSource)
+```
+
+Either way, it runs the exact same flow as the automatic triggers — it fetches the player's available locations and opens the camera scene — it just skips waiting for a framework event to fire first.
+
 ## Controls
 
 While the selector is open:
