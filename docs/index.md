@@ -16,23 +16,6 @@ hero:
       text: View on GitHub
       link: https://github.com/Hryzen-Studios
 
-features:
-  - icon: 📦
-    title: hryzen_lib
-    details: Free framework bridge SDK that every Hryzen resource builds on. Normalizes player, job, and character data across QBX, QBCore, and ESX.
-    link: /hryzen-lib/intro
-    linkText: Read the docs
-  - icon: 🧭
-    title: hryzn_spawn
-    details: Stylised, DUI-based spawn selector for QBX Core — a drop-in replacement for qbx_spawn with full theme and location control.
-    link: /hryzn-spawn/intro
-    linkText: Read the docs
-  - icon: 👀
-    title: More Coming Soon
-    details: Additional Hryzen Studios resources will be documented here as they ship.
-    link: https://hryzen.store
-    linkText: See the store
-
 head:
   - - meta
     - property: og:type
@@ -51,6 +34,54 @@ head:
       type: image/png
       href: /logo.png
 ---
+
+<div class="hz-showcase">
+<a class="hz-panel" href="/hryzen-lib/intro">
+<div class="hz-panel-head">
+<span class="hz-panel-dots"><span></span><span></span><span></span></span>
+<span class="hz-panel-file">hryzen_lib / framework.lua</span>
+<span class="hz-panel-badge free">Free</span>
+</div>
+<pre class="hz-panel-code"><span class="hz-tok-kw">local</span> Framework = <span class="hz-tok-kw">require</span> <span class="hz-tok-str">'@hryzen_lib/modules/framework'</span>
+<span class="hz-tok-kw">local</span> player = Framework.GetPlayer(source)
+<span class="hz-tok-kw">if</span> player.jobs[<span class="hz-tok-str">'police'</span>] <span class="hz-tok-kw">then</span>
+    <span class="hz-tok-comment">-- job-gated logic</span>
+<span class="hz-tok-kw">end</span></pre>
+<div class="hz-panel-body">
+<h3>hryzen_lib</h3>
+<p>Framework bridge SDK every Hryzen resource builds on. Normalizes player, job, and character data across QBX, QBCore, and ESX.</p>
+<span class="hz-panel-link">Read the docs &#8594;</span>
+</div>
+</a>
+<a class="hz-panel" href="/hryzn-spawn/intro">
+<div class="hz-panel-head">
+<span class="hz-panel-dots"><span></span><span></span><span></span></span>
+<span class="hz-panel-file">hryzn_spawn / cl_config.lua</span>
+<span class="hz-panel-badge paid">Paid</span>
+</div>
+<pre class="hz-panel-code">Config.UI = {
+    Font  = <span class="hz-tok-str">'Chakra Petch'</span>,
+    Color = <span class="hz-tok-str">'#3798F2'</span>,
+    HeaderTitle = <span class="hz-tok-str">'Select Spawn'</span>,
+}</pre>
+<div class="hz-panel-body">
+<h3>hryzn_spawn</h3>
+<p>Stylised, DUI-based spawn selector for QBX Core — a drop-in replacement for qbx_spawn with full theme and location control.</p>
+<span class="hz-panel-link">Read the docs &#8594;</span>
+</div>
+</a>
+<a class="hz-panel hz-panel-soon" href="https://hryzen.store">
+<div class="hz-panel-head">
+<span class="hz-panel-dots"><span></span><span></span><span></span></span>
+<span class="hz-panel-file">???</span>
+<span class="hz-panel-badge soon">Soon</span>
+</div>
+<div class="hz-panel-body hz-panel-body-center">
+<p>More resources, documented here as they ship.</p>
+<span class="hz-panel-link">See the store &#8594;</span>
+</div>
+</a>
+</div>
 
 ## Getting Started
 
