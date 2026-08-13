@@ -14,7 +14,12 @@
 ensure ox_lib
 ensure qbx_core
 ensure hryzen_lib
+ensure qbx_spawn
 ```
+
+::: info
+`ensure qbx_spawn` only matters on QBX. `hryzen_lib` ships a script-free `qbx_spawn` marker resource nested inside it — not Qbox's real resource, just something that needs to exist and stay started so `qbx_core` will trigger the spawn-selector flow at all. See [hryzn_spawn's install guide](/hryzn-spawn/install) for the full explanation. Harmless to leave out on QBCore/ESX.
+:::
 
 ## Configuration
 
