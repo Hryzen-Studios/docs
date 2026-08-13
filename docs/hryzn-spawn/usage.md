@@ -31,16 +31,6 @@ While the selector is open:
 
 Locations with a `job` list in `config/sh_config.lua` (see [Configuration](/hryzn-spawn/configuration)) are filtered server-side — a player is only offered a job-restricted location if they currently hold one of the listed jobs. Ungated locations are shown to everyone.
 
-## New character creation
-
-When a new character is created, `hryzn_spawn:characterCreated` fires server-side:
-
-1. The ped is moved to `SharedConfig.NewCharacterSpawn`.
-2. `hryzn_spawn:characterCreatedLoaded` is sent back to the client.
-3. The client fades in and triggers `qb-clothes:client:CreateFirstCharacter`, handing off to your clothing editor.
-
-The spawn selector itself only appears afterward, on subsequent logins.
-
 ## `qbx_spawn` compatibility
 
 These server callbacks are kept for compatibility with resources built against `qbx_spawn` (e.g. property spawn lists):

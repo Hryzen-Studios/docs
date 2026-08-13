@@ -7,9 +7,6 @@
 ```lua
 SharedConfig = {}
 
--- Where a brand-new character is placed after creation, before the clothes editor opens
-SharedConfig.NewCharacterSpawn = vec4(-1241.98, -209.67, 40.22, 113.3)
-
 SharedConfig.Locations = {
     {
         title    = 'Legion Square',
@@ -34,8 +31,6 @@ SharedConfig.Locations = {
 | `image` | Yes | Path to a `.webp` image, relative to `web/dui/` — add new images under `web/imgs/` and list them in `files` in `fxmanifest.lua` |
 | `coords` | Yes | `vec4`/`vector4` spawn position and heading |
 | `job` | No | Table of job names. If set, the location is only offered to players holding one of those jobs (checked server-side against `PlayerData.jobs`) |
-
-`SharedConfig.NewCharacterSpawn` is a one-time position used only when a brand new character is created, before the spawn selector or clothing editor opens.
 
 ## Theme and scene — `config/cl_config.lua`
 
