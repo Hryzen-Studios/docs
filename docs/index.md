@@ -35,51 +35,21 @@ head:
       href: /logo.png
 ---
 
-<div class="hz-showcase">
-<a class="hz-panel" href="/hryzen-lib/intro">
-<div class="hz-panel-head">
-<span class="hz-panel-dots"><span></span><span></span><span></span></span>
-<span class="hz-panel-file">hryzen_lib / framework.lua</span>
-<span class="hz-panel-badge free">Free</span>
-</div>
-<pre class="hz-panel-code"><span class="hz-tok-kw">local</span> Framework = <span class="hz-tok-kw">require</span> <span class="hz-tok-str">'@hryzen_lib/modules/framework'</span>
-<span class="hz-tok-kw">local</span> player = Framework.GetPlayer(source)
-<span class="hz-tok-kw">if</span> player.jobs[<span class="hz-tok-str">'police'</span>] <span class="hz-tok-kw">then</span>
-    <span class="hz-tok-comment">-- job-gated logic</span>
-<span class="hz-tok-kw">end</span></pre>
-<div class="hz-panel-body">
+<div class="hz-resources">
+<a class="hz-resource" href="/hryzen-lib/intro">
 <h3>hryzen_lib</h3>
 <p>Framework bridge SDK every Hryzen resource builds on. Normalizes player, job, and character data across QBX, QBCore, and ESX.</p>
-<span class="hz-panel-link">Read the docs &#8594;</span>
-</div>
+<span class="hz-resource-meta">Free · QBX, QBCore, ESX</span>
 </a>
-<a class="hz-panel" href="/hryzn-spawn/intro">
-<div class="hz-panel-head">
-<span class="hz-panel-dots"><span></span><span></span><span></span></span>
-<span class="hz-panel-file">hryzn_spawn / cl_config.lua</span>
-<span class="hz-panel-badge paid">Paid</span>
-</div>
-<pre class="hz-panel-code">Config.UI = {
-    Font  = <span class="hz-tok-str">'Chakra Petch'</span>,
-    Color = <span class="hz-tok-str">'#3798F2'</span>,
-    HeaderTitle = <span class="hz-tok-str">'Select Spawn'</span>,
-}</pre>
-<div class="hz-panel-body">
+<a class="hz-resource" href="/hryzn-spawn/intro">
 <h3>hryzn_spawn</h3>
 <p>Stylised, DUI-based spawn selector for QBX Core — a drop-in replacement for qbx_spawn with full theme and location control.</p>
-<span class="hz-panel-link">Read the docs &#8594;</span>
-</div>
+<span class="hz-resource-meta">Paid · QBX</span>
 </a>
-<a class="hz-panel hz-panel-soon" href="https://hryzen.store">
-<div class="hz-panel-head">
-<span class="hz-panel-dots"><span></span><span></span><span></span></span>
-<span class="hz-panel-file">???</span>
-<span class="hz-panel-badge soon">Soon</span>
-</div>
-<div class="hz-panel-body hz-panel-body-center">
-<p>More resources, documented here as they ship.</p>
-<span class="hz-panel-link">See the store &#8594;</span>
-</div>
+<a class="hz-resource" href="https://hryzen.store">
+<h3>More resources</h3>
+<p>Documented here as they ship.</p>
+<span class="hz-resource-meta">Hryzen Studios store &#8594;</span>
 </a>
 </div>
 
