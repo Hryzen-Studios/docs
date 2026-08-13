@@ -148,6 +148,15 @@ a.vp-link,
 .VPHome .VPHero {
   position: relative;
 }
+/* Compact hero — keeps the whole homepage on one screen, no scroll */
+.VPHome .VPHero .container {
+  padding-top: 48px !important;
+  padding-bottom: 32px !important;
+}
+.VPHome .VPHero .image-container {
+  max-width: 200px;
+  margin: 0 auto;
+}
 .VPHome .VPHero::before {
   content: "";
   pointer-events: none;
@@ -169,7 +178,7 @@ a.vp-link,
 
 .hz-resources {
   max-width: 1000px;
-  margin: 3.5rem auto;
+  margin: 0 auto;
   padding: 0 24px;
 }
 
@@ -177,7 +186,7 @@ a.vp-link,
   display: flex;
   align-items: baseline;
   gap: 2rem;
-  padding: 1.5rem 0;
+  padding: 1.1rem 0;
   border-top: 1px solid var(--hz-line);
   text-decoration: none !important;
   color: inherit;

@@ -46,19 +46,4 @@ head:
 <p>Stylised, DUI-based spawn selector for QBX Core — a drop-in replacement for qbx_spawn with full theme and location control.</p>
 <span class="hz-resource-meta">Paid · QBX</span>
 </a>
-<a class="hz-resource" href="https://hryzen.store">
-<h3>More resources</h3>
-<p>Documented here as they ship.</p>
-<span class="hz-resource-meta">Hryzen Studios store &#8594;</span>
-</a>
 </div>
-
-## Getting Started
-
-Every Hryzen resource — free or paid — depends on [hryzen_lib](/hryzen-lib/intro), so it's always the right place to start.
-
-1. [Install hryzen_lib](/hryzen-lib/setup) and set `Framework` to match your server (`qbx`, `qbcore`, or `esx`)
-2. Pick a resource above and follow its own install guide
-3. Configure it to taste — every resource ships its own config reference
-
-Need a hand? Every doc page here is public regardless of whether you've purchased anything — purchasing only unlocks the resource's files, never the documentation.
