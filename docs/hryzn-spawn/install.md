@@ -1,27 +1,22 @@
-# Installation Guide
+# Installation
 
-If you're confused or need more help, feel free to reach out through the [Hryzen Studios store](https://hryzen.store).
+Need help beyond this page? Reach out through the [Hryzen Studios store](https://hryzen.store).
 
-* 💳 [Purchase Here](https://hryzen.store)
+## 01 — Acquire
 
-## 1. Download the Resource
+Before installing, make sure you have every [required resource](/hryzn-spawn/requirements) in place. Then download the `hryzn_spawn` asset from your [Cfx.re Portal](https://portal.cfx.re/assets/granted-assets) — the account you log in with there must be the same one you checked out with on the store.
 
-* Before installing, make sure you have all the [Required Resources](/hryzn-spawn/requirements)
-* Download the `hryzn_spawn` asset from your [Cfx.re Portal](https://portal.cfx.re/assets/granted-assets)
-  * The account you log in with on the portal must be the same account you used to check out on the store.
-
-## 2. Install Files
+## 02 — Deploy
 
 ::: warning
-Do not rename the `hryzn_spawn` folder otherwise the script will not work correctly.
+Do not rename the `hryzn_spawn` folder — the script won't work correctly if you do.
 :::
 
-* Drag & drop the folder into your server's `resources` directory
-* **Remove or disable `qbx_spawn`.** `hryzn_spawn` registers the same `qb-spawn:client:setupSpawns` entry point — running both at once will cause the spawn selector to trigger twice or behave unpredictably.
+Drag the folder into your server's `resources` directory as-is. Then **remove or disable `qbx_spawn`**: `hryzn_spawn` registers the same `qb-spawn:client:setupSpawns` entry point, and running both at once causes the spawn selector to trigger twice or behave unpredictably.
 
-## 3. Add to server.cfg
+## 03 — Register
 
-Add it after its dependencies:
+Add it to `server.cfg`, after its dependencies:
 
 ```ini
 ensure ox_lib
@@ -31,12 +26,10 @@ ensure hryzen_lib
 ensure hryzn_spawn
 ```
 
-## 4. Configure Script
+## 04 — Configure
 
-* Inside the `hryzn_spawn` folder there is a `config` folder which contains the shared and client config files.
-* See the [Configuration](/hryzn-spawn/configuration) page for every available option.
+The `config` folder inside `hryzn_spawn` holds the shared and client config files. See [Configuration](/hryzn-spawn/configuration) for every available option.
 
-## 5. Verify
+## 05 — Confirm
 
-* Restart the resource (`refresh` + `ensure hryzn_spawn`, or restart the server)
-* Create a new character or reconnect — you should see the custom camera scene and DUI spawn selector instead of the default `qbx_spawn` UI
+Restart the resource (`refresh` + `ensure hryzn_spawn`, or restart the server), then create a new character or reconnect. You should see the custom camera scene and DUI spawn selector in place of the default `qbx_spawn` UI.
