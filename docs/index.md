@@ -1,7 +1,38 @@
 ---
-title: Home
-sidebar: false
-aside: false
+layout: home
+
+hero:
+  name: Hryzen Studios
+  text: Documentation
+  image:
+    src: /logo.png
+    alt: Hryzen Studios logo
+  tagline: Scripts and UI for FiveM servers that ship fast and run clean.
+  actions:
+    - theme: brand
+      text: View Documentation
+      link: /home
+    - theme: alt
+      text: View on GitHub
+      link: https://github.com/Hryzen-Studios
+
+features:
+  - icon: 📦
+    title: hryzen_lib
+    details: Free framework bridge SDK that every Hryzen resource builds on. Normalizes player, job, and character data across QBX, QBCore, and ESX.
+    link: /hryzen-lib/intro
+    linkText: Read the docs
+  - icon: 🧭
+    title: hryzn_spawn
+    details: Stylised, DUI-based spawn selector for QBX Core — a drop-in replacement for qbx_spawn with full theme and location control.
+    link: /hryzn-spawn/intro
+    linkText: Read the docs
+  - icon: 👀
+    title: More Coming Soon
+    details: Additional Hryzen Studios resources will be documented here as they ship.
+    link: https://hryzen.store
+    linkText: See the store
+
 head:
   - - meta
     - property: og:type
@@ -21,53 +52,12 @@ head:
       href: /logo.png
 ---
 
-<div class="hz-home">
-<section class="hz-hero">
-<div class="hz-hero-inner">
-<div class="hz-status"><span class="dot"></span> Documentation Online</div>
-<h1 class="hz-title">Hryzen Studios<br><span>Documentation</span></h1>
-<p class="hz-lead">Scripts and UI for FiveM servers that ship fast and run clean. Everything below is public — purchasing a resource only unlocks the files, never the docs.</p>
-<div class="hz-actions">
-<a class="hz-btn hz-btn-primary" href="/hryzen-lib/intro">Start with hryzen_lib</a>
-<a class="hz-btn" href="https://github.com/Hryzen-Studios">GitHub</a>
-<a class="hz-btn" href="https://hryzen.store">Store</a>
-</div>
-</div>
-</section>
-<section class="hz-registry">
-<div class="hz-registry-title">Resources</div>
-<a class="hz-resource" href="/hryzen-lib/intro">
-<span class="hz-resource-status free">Free</span>
-<span class="hz-resource-body">
-<span class="hz-resource-name">hryzen_lib</span>
-<span class="hz-resource-desc">Framework bridge SDK every Hryzen resource builds on</span>
-</span>
-<span class="hz-pills">
-<span class="hz-pill">QBX</span>
-<span class="hz-pill">QBCORE</span>
-<span class="hz-pill">ESX</span>
-</span>
-<span class="hz-resource-arrow">&#8594;</span>
-</a>
-<a class="hz-resource" href="/hryzn-spawn/intro">
-<span class="hz-resource-status paid">Paid</span>
-<span class="hz-resource-body">
-<span class="hz-resource-name">hryzn_spawn</span>
-<span class="hz-resource-desc">Stylised spawn selector — drop-in replacement for qbx_spawn</span>
-</span>
-<span class="hz-pills">
-<span class="hz-pill">QBX</span>
-</span>
-<span class="hz-resource-arrow">&#8594;</span>
-</a>
-<a class="hz-resource" href="https://hryzen.store">
-<span class="hz-resource-status soon">Soon</span>
-<span class="hz-resource-body">
-<span class="hz-resource-name">More resources</span>
-<span class="hz-resource-desc">Documented here as they ship</span>
-</span>
-<span class="hz-pills"></span>
-<span class="hz-resource-arrow">&#8594;</span>
-</a>
-</section>
-</div>
+## Getting Started
+
+Every Hryzen resource — free or paid — depends on [hryzen_lib](/hryzen-lib/intro), so it's always the right place to start.
+
+1. [Install hryzen_lib](/hryzen-lib/setup) and set `Framework` to match your server (`qbx`, `qbcore`, or `esx`)
+2. Pick a resource above and follow its own install guide
+3. Configure it to taste — every resource ships its own config reference
+
+Need a hand? Every doc page here is public regardless of whether you've purchased anything — purchasing only unlocks the resource's files, never the documentation.

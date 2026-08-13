@@ -22,6 +22,10 @@ export default {
     ],
     sidebar: [
       {
+        text: "Home",
+        link: "/home",
+      },
+      {
         text: "hryzen_lib",
         link: "/hryzen-lib/intro",
         collapsible: true,
