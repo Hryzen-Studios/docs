@@ -23,16 +23,16 @@ ensure qbx_spawn
 
 ## Configuration
 
-Set `Framework` in `config.lua` to match the framework your server runs:
+By default, `hryzen_lib` auto-detects your framework via `GetResourceState` — nothing to configure. To pin it explicitly instead, set `Framework` in `config.lua`:
 
 ```lua
 return {
   Debug = false,
 
-  Framework = 'qbx', -- qbx, qbcore, esx
+  Framework = 'auto', -- auto, qbx, qbcore, esx
 }
 ```
 
 ::: info
-Only the framework you select is active — `hryzen_lib` doesn't auto-detect, matching how most FiveM SDKs handle this so behavior stays predictable.
+Auto-detection checks for `qbx_core`, `qb-core`, then `es_extended`, in that order, and picks the first one found running. If none of the three are running, resources that depend on `hryzen_lib` will error on startup rather than silently doing nothing — set `Framework` explicitly if you're seeing that.
 :::

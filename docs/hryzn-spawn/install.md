@@ -22,12 +22,12 @@ On QBX, `qbx_core` checks for a resource literally named `qbx_spawn` before it o
 
 ## 03 — Register
 
-Add it to `server.cfg`, after its dependencies and after [hryzen_lib is configured](/hryzen-lib/setup) for your framework. `qbx_spawn` here is the marker nested inside `hryzen_lib`, not a separate download:
+Add it to `server.cfg`, after its dependencies and after your framework resource — `hryzen_lib` [auto-detects](/hryzen-lib/setup#configuration) whichever one is running. `qbx_spawn` here is the marker nested inside `hryzen_lib`, not a separate download:
 
 ```ini
 ensure ox_lib
 ensure oxmysql
-ensure qbx_core        # or qb-core / es_extended, matching hryzen_lib's config
+ensure qbx_core        # or qb-core / es_extended — auto-detected
 ensure hryzen_lib
 ensure qbx_spawn        # QBX only — bundled with hryzen_lib, see the note above
 ensure hryzn_spawn

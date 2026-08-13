@@ -11,3 +11,14 @@ The framework module is server side only. Player/character data should stay serv
 ```lua
 local Framework = require '@hryzen_lib/modules/framework'
 ```
+
+## Reading the detected framework on the client
+
+Client scripts can't import the Framework module, but sometimes still need to know *which* framework is active (QBX vs QBCore vs ESX) to decide how to behave — without touching any player data. For that, import the lightweight detection helper instead:
+
+```lua
+local frameworkName = require '@hryzen_lib/utils/detect'
+-- 'qbx' | 'qbcore' | 'esx'
+```
+
+This is safe on both client and server — it only resolves [`config.lua`'s `Framework` setting](/hryzen-lib/setup#configuration) (including running the same auto-detection), it never touches player data.
