@@ -43,7 +43,7 @@ head:
 </a>
 <a class="hz-resource" href="/hryzn-spawn/intro">
 <h3>hryzn_spawn</h3>
-<p>Stylised, DUI-based spawn selector for QBX Core — a drop-in replacement for qbx_spawn with full theme and location control.</p>
-<span class="hz-resource-meta">Paid · QBX</span>
+<p>Stylised, DUI-based spawn selector — a drop-in replacement for qbx_spawn with full theme and location control.</p>
+<span class="hz-resource-meta">Paid · QBX, QBCore, ESX</span>
 </a>
 </div>
