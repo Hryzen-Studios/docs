@@ -18,6 +18,10 @@ Drag the folder into your server's `resources` directory as-is, then remove or d
 On QBX, `qbx_core` checks for a resource literally named `qbx_spawn` before it opens the spawn selector at all — it doesn't check whether anything registered a handler for the event, just whether that specific resource name is running. `hryzn_spawn` ships a script-free `qbx_spawn` marker resource nested inside it for exactly this — it's not Qbox's real `qbx_spawn`. No separate download, and it's already inside the folder you downloaded. Not needed on QBCore.
 :::
 
+::: warning
+If you also run `qbx_apartments` on QBX, `qbx_core` checks for it **before** `qbx_spawn` and always defers to it if it's running — characters that own a property will spawn there instead of seeing `hryzn_spawn`'s selector. `hryzn_spawn` hooks that same event too, so it wins the race, but if `qbx_apartments` also opens its own UI for property owners, both may fire. See [Usage](/hryzn-spawn/usage) for details.
+:::
+
 ## 03 — Register
 
 Add it to `server.cfg`, after its dependencies and after your framework resource — `hryzn_spawn` detects QBX vs QBCore itself, nothing to configure:

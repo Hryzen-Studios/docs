@@ -9,6 +9,10 @@ Once installed, `hryzn_spawn` works automatically — there's nothing to trigger
 - `qb-spawn:client:setupSpawns` — fetches available locations and opens the scene
 - `qb-spawn:client:openUI` — accepted as a legacy no-op for resources that fire it alongside `setupSpawns`
 
+::: warning
+On QBX, `qbx_core` checks for a running `qbx_apartments` resource **before** it checks for `qbx_spawn` at all — if `qbx_apartments` is present, it always wins and fires `apartments:client:setupSpawnUI` instead, regardless of the `qbx_spawn` marker. `hryzn_spawn` also listens for that event so it wins this race too. If `qbx_apartments` itself also opens its own UI for characters that own a property, both will fire — remove or reconfigure `qbx_apartments`' own spawn-UI hook if you want `hryzn_spawn` to be the only thing that opens.
+:::
+
 There's also a server-triggerable entry point for servers that want to open the selector directly and get outfit preview support:
 
 ```lua
