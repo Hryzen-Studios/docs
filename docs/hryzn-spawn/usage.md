@@ -9,13 +9,13 @@ Once installed, `hryzn_spawn` works automatically — there's nothing to trigger
 - `qb-spawn:client:setupSpawns` — fetches available locations and opens the scene
 - `qb-spawn:client:openUI` — accepted as a legacy no-op for resources that fire it alongside `setupSpawns`
 
-There's also a server-triggerable entry point for QBX servers that want to open the selector directly and get outfit preview support:
+There's also a server-triggerable entry point for servers that want to open the selector directly and get outfit preview support:
 
 ```lua
 TriggerClientEvent('hryzn_spawn:loadSpawnSelector', source, citizenId)
 ```
 
-If [illenium-appearance](https://github.com/illenium-development/illenium-appearance) is running **and you're on QBX**, this loads the character's saved model and clothing onto the ped before the scene opens, so the player sees their actual outfit while picking a spawn. This preview isn't wired up for QBCore yet.
+If [illenium-appearance](https://github.com/illenium-development/illenium-appearance) is running, this loads the character's saved model and clothing onto the ped before the scene opens, so the player sees their actual outfit while picking a spawn — on both QBX and QBCore. It reads illenium-appearance's own `playerskins` table directly by `citizenid`, rather than going through a framework-specific callback, so there's nothing framework-specific about it.
 
 ## Manual trigger
 

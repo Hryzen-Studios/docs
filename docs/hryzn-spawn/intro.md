@@ -7,7 +7,7 @@ A stylised, DUI-based spawn selector for **QBX Core and QBCore** — a fully sel
 - Custom camera scene with an animated ped and a DUI menu rendered onto a world prop
 - Configurable spawn locations, optionally gated by job — works the same way on QBX and QBCore
 - "Last location" support, compatible with `qbx_spawn`'s server callbacks on QBX
-- Optional [illenium-appearance](https://github.com/illenium-development/illenium-appearance) integration on QBX to preview the character's outfit during selection
+- Optional [illenium-appearance](https://github.com/illenium-development/illenium-appearance) integration to preview the character's outfit during selection, on QBX and QBCore
 - Fully re-themeable — font, accent color, background color, header text — via config
 
 ::: info

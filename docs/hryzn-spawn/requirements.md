@@ -9,4 +9,4 @@ No other Hryzen Studios resources required — `hryzn_spawn` is fully self-conta
 
 Optional:
 
-* [illenium-appearance](https://github.com/illenium-development/illenium-appearance) — on QBX only, previews the player's saved outfit on the ped during spawn selection
+* [illenium-appearance](https://github.com/illenium-development/illenium-appearance) — previews the player's saved outfit on the ped during spawn selection, on either framework
