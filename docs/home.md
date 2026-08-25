@@ -8,9 +8,9 @@ If you're confused or need more help, feel free to open an issue or discussion o
 
 | Resource | Status | Frameworks | What it does |
 |---|---|---|---|
-| [hryzen_lib](/hryzen-lib/intro) | Free | QBX · QBCore · ESX | Framework bridge SDK every Hryzen resource builds on |
-| [hryzn_spawn](/hryzn-spawn/intro) | Paid | QBX | Stylised spawn selector, drop-in replacement for `qbx_spawn` |
+| [hryzen_lib](/hryzen-lib/intro) | Free | QBX · QBCore · ESX | Framework bridge SDK for resources built on top of it |
+| [hryzn_spawn](/hryzn-spawn/intro) | Paid | QBX · QBCore | Stylised, self-contained spawn selector, drop-in replacement for `qbx_spawn` |
 
 ## Start here
 
-New to Hryzen resources? [Install hryzen_lib](/hryzen-lib/setup) first — every other resource depends on it — then jump into whichever resource you're setting up.
+Each resource lists its own requirements — check its **Requirements** page before installing. Not every resource depends on `hryzen_lib`; `hryzn_spawn`, for example, is fully self-contained.

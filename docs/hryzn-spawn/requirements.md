@@ -2,16 +2,10 @@
 
 * [ox_lib](https://coxdocs.dev/ox_lib) (Free) — callbacks, animations, model loading
 * [oxmysql](https://coxdocs.dev/oxmysql) (Free) — database access for last-location lookups
-* [hryzen_lib](/hryzen-lib/intro) (Free) — Hryzen Studios' framework bridge, used for player/job lookups
 * `onesync` must be enabled server-side (`onesync on` in `server.cfg`)
+* Either [qbx_core](https://github.com/Qbox-project/qbx_core), or [qb-core](https://github.com/qbcore-framework/qb-core) + [qb-multicharacter](https://github.com/qbcore-framework/qb-multicharacter) — detected automatically, no configuration needed
 
-Plus whichever framework you run, matching `Framework` in `hryzen_lib`'s `config.lua`:
-
-| `Framework` | Requires |
-|---|---|
-| `qbx` | [qbx_core](https://github.com/Qbox-project/qbx_core) |
-| `qbcore` | [qb-core](https://github.com/qbcore-framework/qb-core) + [qb-multicharacter](https://github.com/qbcore-framework/qb-multicharacter) |
-| `esx` | [es_extended](https://github.com/esx-overextended/es_extended) |
+No other Hryzen Studios resources required — `hryzn_spawn` is fully self-contained.
 
 Optional:
 
